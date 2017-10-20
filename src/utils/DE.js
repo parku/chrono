@@ -57,9 +57,11 @@ exports.MONTH_OFFSET = {
     'dez.': 12
 };
 
-exports.INTEGER_WORDS_PATTERN = '(?:eins|zwei|drei|vier|fünf|fuenf|sechs|sieben|acht|neun|zehn|elf|zwölf|zwoelf)';
+exports.INTEGER_WORDS_PATTERN = '(?:ein(?:s|e)?|zwei|drei|vier|fünf|fuenf|sechs|sieben|acht|neun|zehn|elf|zwölf|zwoelf)';
 exports.INTEGER_WORDS = {
+    'ein' : 1,
     'eins' : 1,
+    'eine' : 1,
     'zwei' : 2,
     'drei' : 3,
     'vier' : 4,
