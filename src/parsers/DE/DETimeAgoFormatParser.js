@@ -11,13 +11,13 @@ var util  = require('../../utils/DE');
 var PATTERN = new RegExp('' +
     '(\\W|^)vor\\s*' +
     '(' + util.INTEGER_WORDS_PATTERN + '|[0-9]+|einigen|eine[rm]\\s*halben|eine[rm])\\s*' +
-    '(sekunden?|min(?:ute)?n?|stunden?|wochen?|tag(?:en)?|monat(?:en)?|jahr(?:en)?)\\s*' +
+    '(sekunden?|min(?:ute)?n?|stunden?|wochen?|tag(?:e|en)?|monat(?:e|en)?|jahr(?:e|en)?)\\s*' +
     '(?=(?:\\W|$))', 'i');
 
 var STRICT_PATTERN = new RegExp('' +
     '(\\W|^)vor\\s*' +
     '([0-9]+|eine(?:r|m))\\s*' +
-    '(sekunden?|minuten?|stunden?|tag(?:en)?)' +
+    '(sekunden?|minuten?|stunden?|tag(?:e|en)?)' +
     '(?=(?:\\W|$))', 'i');
 
 exports.Parser = function DETimeAgoFormatParser(){
